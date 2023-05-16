@@ -33,5 +33,5 @@ app.get('/',(req,res)=>{
 app.use('/student',studentRouter);
 app.use('/teacher',teacherRouter);
 app.use('/auth',authRouter);
-const PORT = process.env.PORT || 3000;
-app.listen(PORT,()=>{console.log('listening to port 3000')})
+const port = process.env.PORT || 8080;
+app.listen(port,()=>{console.log('listening to port 8080')})
